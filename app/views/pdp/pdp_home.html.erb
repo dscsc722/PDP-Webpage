@@ -1,0 +1,124 @@
+
+ <!--  <%= yield %>-->
+<!DOCTYPE HTML>
+<!--
+	Identity by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Identity by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/html5shiv.js"></script><![endif]
+		<link rel="stylesheet" href="assets/stylesheets/main.css" />
+		-->
+		 <%= stylesheet_link_tag "application", :media => "all" %>
+		 <%= stylesheet_link_tag "main","noscript", :media => "all" %>
+		 <%= javascript_include_tag "application" %>
+		 
+		 <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>-->
+	</head>
+	<body class="is-loading">
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+    	</div>
+			</div>
+			</nav>
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main">
+						<header>
+							<span class="avatar"><%= image_tag("pdpsi_avatar", :style=>"height:120px; width:120px;")%>
+								
+							</span>
+							<h1>Pi Delta Psi</h1>
+							<p>Beta Chapter</p>
+						</header>
+						
+						<hr />
+						<h2>Come Join Us</h2>
+						
+						
+						<div>
+							<div class="row live-gutter">
+							
+							<div class="col-xs-3">
+
+							<a href="#myPopup" data-rel="popup" data-position-to="window">
+    						<%= image_tag("alumni_bbq", :class => "img_bbq2") %></a>
+
+    						<div data-role="popup" id="myPopup">
+    						  <p>Alumni BBQ</p> 
+     						 <a href="#pageone" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><%= image_tag("alumni_bbq", :class => "img_bbq2",:style=>"width:800px;",:height=>"400px;" ) %>
+   							 </div>
+
+						 
+							</div>
+							<div class="col-xs-3">
+							</div>
+							<div class="col-xs-3">
+							</div>
+							<div class="col-xs-3">
+							</div>
+							<div class="col-xs-3">
+							</div>
+							<div class="col-xs-3">
+							</div>
+							
+
+						</div>
+
+
+
+
+
+
+						<hr />
+						
+						<footer>
+							<ul class="icons">
+								<li><a href="#" class="fa-twitter">Twitter</a></li>
+								<li><a href="#" class="fa-instagram">Instagram</a></li>
+								<li><a href="#" class="fa-facebook">Facebook</a></li>
+							</ul>
+						</footer>
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="copyright">
+							<li>&copy; Pi Delta Psi</li><li>Design: <a href="http://html5up.net">Xin</a></li>
+						</ul>
+					</footer>
+
+			</div>
+		
+
+		<!-- Scripts -->
+			<!--[if lte IE 8]><script src="assets/js/respond.min.js"></script><![endif]-->
+			<script>
+				if ('addEventListener' in window) {
+					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
+					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+				}
+			</script>
+
+	</body>
+</html>
