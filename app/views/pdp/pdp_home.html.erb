@@ -6,7 +6,7 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html>
+<html data-enhance="false" data-role="none">
 	<head>
 		<title>Identity by HTML5 UP</title>
 		<meta charset="utf-8" />
@@ -14,17 +14,19 @@
 		<!--[if lte IE 8]><script src="assets/js/html5shiv.js"></script><![endif]
 		<link rel="stylesheet" href="assets/stylesheets/main.css" />
 		-->
-		 <%= stylesheet_link_tag "application", :media => "all" %>
-		 <%= stylesheet_link_tag "main","noscript", :media => "all" %>
+		<script>
+
+</script>
 		 <%= javascript_include_tag "application" %>
-		 
-		 <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"> 
+		 <%= stylesheet_link_tag "application", :media => "all" %>
+		 <%= stylesheet_link_tag "main","noscript", :media => "all" %> 
 	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
+		
 <!-- jQuery library -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 
 <!-- Latest compiled JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -32,7 +34,7 @@
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>-->
 	</head>
-	<body class="is-loading">
+	<body class=".ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a .ui-panel-wrapper" data-enhance="false" data-role="none">
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -61,12 +63,13 @@
 							
 							<div class="col-xs-3">
 
-							<a href="#myPopup" data-rel="popup" data-position-to="window">
+							<a href="#myPopup" data-role="none" data-enhance="false" data-rel="popup" data-position-to="window">
     						<%= image_tag("alumni_bbq", :class => "img_bbq2") %></a>
 
-    						<div data-role="popup" id="myPopup">
+    						<div data-role="popup" 
+    						id="myPopup">
     						  <p>Alumni BBQ</p> 
-     						 <a href="#pageone" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><%= image_tag("alumni_bbq", :class => "img_bbq2",:style=>"width:800px;",:height=>"400px;" ) %>
+     						 <a href="#pageone" data-role="none" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><%= image_tag("alumni_bbq", :class => "img_bbq2",:style=>"width:800px;",:height=>"400px;" ) %>
    							 </div>
 
 						 
