@@ -1,4 +1,4 @@
-@charset "UTF-8";
+
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300");
 
@@ -43,25 +43,35 @@
 	display: block;
 }
 	
-	
+	.well{
+		width: 10em;
+		height: 10em;
+		
+	}
 	.ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a .ui-panel-wrapper{
 		background-color: transparent !important;
 
 	}
 
+	.live-gutter >div:after {
+  content: "";
+  background: #ddd;
+  height:100px;
+  width:100%;
+  display: block;
+  margin-right: -28px;
+        margin-left: -28px;
+         padding-right: 28px;
+        padding-left: 28px;
+}
 	div.col-xs-3{
 		background-color: black;
-		width: 10em; !important;
-		height: 97px; !important;
+		height: 100px; !important
 	}
 
 	.img_bbq2{
 		width: 100%;
 		height: 100%;
-	}
-	.row{
-		margin-left:18px; !important;
-		margin-right:0px; !important;
 	}
 
 	table {
