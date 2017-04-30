@@ -28,6 +28,7 @@ Rails.application.configure do
 
   # Don't care if the mailer can't send.
   config.action_mailer.raise_delivery_errors = false
+config.assets.precompile += %w( .svg .eot .woff .ttf)
 
   config.action_mailer.perform_caching = false
   #config.serve_static_files = true

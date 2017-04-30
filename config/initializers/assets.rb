@@ -11,4 +11,4 @@ Rails.application.config.assets.version = '1.0'
 # Rails.application.config.assets.precompile += %w( search.js )
 
 Rails.application.config.assets.precompile += ['font-awesome.min.css', 'FontAwesome.otf','fontawesome-webfont.svg','fontawesome-webfont.woff','overlay.png','main.css', 'noscript.css']
-Rails.application.config.assets.paths << Rails.root.join('vendor', 'assets', 'fonts')  
+Rails.application.config.assets.paths << Rails.root.join('vendor', 'assets', 'fonts', 'images')  
